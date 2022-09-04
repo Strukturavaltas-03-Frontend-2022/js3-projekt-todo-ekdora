@@ -1,0 +1,87 @@
+body {
+	margin: 0;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.justify-between {
+	justify-content: space-between;
+}
+
+.gap-1 {
+	gap: 0.25rem;
+}
+
+.gap-2 {
+	gap: 0.5rem;
+}
+
+.gap-4 {
+	gap: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.todo__box {
+    width: 50%;
+}
+
+.todo__form {
+    width: 90%;
+}
+
+.todo__date-wrapper {
+    font-size: 1.25rem;
+    font-family: Calibri;
+}
+
+.common-font {
+    font-size: 1.125rem;
+    font-family: Calibri;
+}
+
+.icon-size {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.todo__item {
+    padding: 0.25rem;
+    background-color: lightgray;
+    border-radius: 3px;
+}
+
+.todo__checkbox {
+    cursor: pointer;
+}
+
+.delete-icon {
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
+.todo__item:hover .delete-icon {
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}

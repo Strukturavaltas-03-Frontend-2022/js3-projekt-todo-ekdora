@@ -1,6 +1,6 @@
 # To-do
 
-Egy "Teendőlista" alkalmazást kell lefejlesztened.   
+Egy "Teendőlista" alkalmazást kell lefejlesztened.
 Az alkalmazás dizájnját és működését az alábbi ábrák szemléltetik:
 
 ![image](https://user-images.githubusercontent.com/68642008/185645707-a78d212a-0c3e-4736-80a1-71882ebd9bab.png)
