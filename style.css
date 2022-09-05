@@ -1,63 +1,88 @@
+@font-face {
+	font-family: Hiatus;
+	src: url("assets/fonts/Hiatus/Hiatus.ttf");
+}
+
 body {
-	margin: 0;
+    margin: 0;
+    background-color:rgb(255,195,143)
+}
+
+h2 {
+    font-family: Calibri;
+    color: 	rgb(255,69,0);
+    font-family: Hiatus;
+    font-size: 2.5rem;
 }
 
 .flex {
-	display: flex;
+    display: flex;
 }
 
 .flex-wrap {
-	flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .flex-col {
-	flex-direction: column;
+    flex-direction: column;
 }
 
 .items-center {
-	align-items: center;
+    align-items: center;
 }
 
 .justify-center {
-	justify-content: center;
+    justify-content: center;
 }
 
 .justify-between {
-	justify-content: space-between;
+    justify-content: space-between;
 }
 
 .gap-1 {
-	gap: 0.25rem;
+    gap: 0.25rem;
 }
 
 .gap-2 {
-	gap: 0.5rem;
+    gap: 0.5rem;
 }
 
 .gap-4 {
-	gap: 1rem;
+    gap: 1rem;
 }
 
 .text-center {
     text-align: center;
 }
 
-.todo__box {
-    width: 50%;
+.common-font {
+    font-size: 1.125rem;
+    font-family: Calibri;   
 }
 
-.todo__form {
+.font-bold {
+    font-weight: 700;
+}
+
+.todo__box {
+    padding: 0 0 1.5rem 0;
+    width: 50%;
+    background-color: rgb(255,218,185);
+}
+
+.todo__sheet {
     width: 90%;
 }
 
 .todo__date-wrapper {
     font-size: 1.25rem;
     font-family: Calibri;
+    color: orangered;
+    font-weight: 800;
 }
 
-.common-font {
-    font-size: 1.125rem;
-    font-family: Calibri;
+.todo__input {
+    font-style: italic;
 }
 
 .icon-size {
@@ -67,12 +92,27 @@ body {
 
 .todo__item {
     padding: 0.25rem;
-    background-color: lightgray;
     border-radius: 3px;
+}
+
+.todo__box .todo__list .todo__item {
+    background-color: rgb(255,241,230);
+    opacity: 1;
+    animation: showMe 2s forwards;
+}
+
+@keyframes showMe{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .todo__checkbox {
     cursor: pointer;
+    accent-color: chocolate;
 }
 
 .delete-icon {
@@ -81,7 +121,39 @@ body {
     transition: opacity 0.6s ease-out;
 }
 
+.done-icon {
+    padding: 3px;
+}
+
 .todo__item:hover .delete-icon {
     opacity: 1;
     transition: opacity 0.6s ease-in-out;
+}
+
+.todo__btn {
+    border: solid 1px;
+    border-radius: 0.5rem;
+    color: rgb(255,69,0);
+    background-color: rgb(255,239,213, 0.3);
+    font-family: Calibri;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.todo__btn:hover {
+    background-color: rgb(255,239,213, 0.7);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.hide-list-elements {
+    display: none;
+}
+
+.todo__cocktail {
+    width: 25%;
+}
+
+.todo__chill {
+    color: 	rgb(255,69,0);
 }

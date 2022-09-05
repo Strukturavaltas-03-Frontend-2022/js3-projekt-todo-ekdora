@@ -25,3 +25,4 @@ A már elvégzett teendők:
 - A teendő előtti checkboxot bejelölve az adott teendő elvégzett lesz, a listáról eltűnik
 - A Show/Hide Complete szövegre kattintva lehet megjeleníteni/elrejteni a már elvégzett teendőket
 - A Clear All-ra kattintva a még el nem végzett összes teendő törlésre kerül
+- Opcionális: ha nincs már el nem végzett és elvégzett todo, akkor jelenjen meg a 'Time to chill! You have no todos.'

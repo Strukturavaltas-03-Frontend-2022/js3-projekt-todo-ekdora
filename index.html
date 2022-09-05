@@ -11,19 +11,21 @@
     <div class="todo flex justify-center">
         <div class="todo__box flex flex-col items-center">
             <h2 class="text-center">Daily To-Do list manager</h2>
-            <div class="todo__form flex flex-col gap-2">
+            <div class="todo__sheet flex flex-col gap-4">
                 <div class="todo__date-wrapper flex justify-between">
                     <div class="todo__day"></div>
                     <div class="todo__date"></div>
                 </div>
-                <div class="common-font">
-                    <input class="common-font" type="text" placeholder="Take the garbage out"></input>
-                    <button class="common-font" onclick="newElement()">+</button>
+                <div class="todo__form common-font"></div>
+                <div class="todo__pending common-font"></div>
+                <div class="todo__list flex flex-col gap-1"></div>
+                <div class="todo__completed common-font"></div>
+                <div class="todo__done flex flex-col gap-1"></div>
+                <div class="todo__btns flex justify-between"></div>
+                <div class="todo__chill flex flex-col items-center gap-4">
+                    <img class="todo__cocktail" src="assets/images/cocktail.svg" alt="cocktail">
+                    <div class="common-font font-bold">Time to chill! You have no todos.</div>
                 </div>
-                <div class="common-font">You have x pending items</div>
-                <div id="todo__list" class="flex flex-col gap-1"></div>
-                <div class="common-font">Completed tasks: x %</div>
-                <div id="todo__done" class="flex flex-col gap-1"></div>
             </div>
         </div>
     </div>
